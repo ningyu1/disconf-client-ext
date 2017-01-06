@@ -1,0 +1,7 @@
+/target/*
+/bin/*
+/*/target/*
+/*/bin/*
+/*.bat
+.project
+.classpath
