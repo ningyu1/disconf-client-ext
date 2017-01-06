@@ -7,7 +7,6 @@ disconf-client-ext增加了global的配置共享给所有的app，为什么要�
 
 增加了global的支持后，app中的配置减少了，避免了一些由于配置导致的错误，也可以通过global的配置去规范统一app的公共配置，让业务开发不关心公共配置的细节，在使用的时候直接使用无需维护。
 
-
 让自己的app支持global特性的改造步骤：
 
 1. 在pom中增加dependency
@@ -68,6 +67,8 @@ disconf-client-ext增加了global的配置共享给所有的app，为什么要�
 4. 业务无需关注global配置，配置后会自动引入配置文件
 
 注意：业务app只需要关注项目特定的配置文件，例如：jdbc.properties,公共服务的配置统一走global。
-自动加载的全局配置app：GLOBALPROP，版本：1.0.0，env：公用业务app的env
-有一个配置项：global ，值：所有global的文件以“,”分割，例如：global-dubbo.properties,global-redis.properties,global-zookeeper.properties
-其余都是配置文件，文件名称与配置项描述的名称一致，如果要添加配置文件，要记得在global配置项中的值后面追加文件名称
+
+
+1. 自动加载的全局配置app：GLOBALPROP，版本：1.0.0，env：公用业务app的env
+2. 有一个配置项：global ，值：所有global的文件以“,”分割，例如：global-dubbo.properties,global-redis.properties,global-zookeeper.properties
+3. 其余都是配置文件，文件名称与配置项描述的名称一致，如果要添加配置文件，要记得在global配置项中的值后面追加文件名称
