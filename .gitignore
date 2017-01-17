@@ -5,3 +5,6 @@
 /*.bat
 .project
 .classpath
+/target/
+
+.settings/*
