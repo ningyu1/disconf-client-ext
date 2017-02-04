@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, Jiuye SCM and/or its affiliates. All rights reserved.
+ * Copyright (c) 2017, Tsoft and/or its affiliates. All rights reserved.
  * FileName: DisClientConfigExt.java
  * Author:   ningyu
  * Date:     2017年1月6日
